@@ -122,4 +122,6 @@ Foreach examples above JF.login method will be automatically called if a valid A
 
 Last but not least
 ------------------
-We believe this is a huge improvement for JotForm. With API our users have much more control over their data, but more importantly this API may inspire developers to implement stunning applications for JotForm users. There are plenty of blowing ideas from our team like a blog engine, comment plugin like Disqus, data backup, submission analysis .... and i am sure there will be lots. We also created a public repository for [api use cases](https://github.com/jotform/api-use-cases).
+We believe this is a huge improvement for JotForm. With API our users have much more control over their data, but more importantly this API may inspire developers to implement many interesting, useful applications. There are plenty of blowing ideas from team like a blog engine, comment plugin like Disqus, data backup, submission analysis .... and i am sure there will be lots. 
+
+We are motivated to help anyone working with JotForm API, seriously do not hesitate to ask questions. We created a public repository for [api use cases](https://github.com/jotform/api-use-cases) which includes projects, code snippets. In adddition we are planning to release a bulletin board for latest API news and discussions next week, see you there!
