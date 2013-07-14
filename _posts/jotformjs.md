@@ -31,7 +31,7 @@ You can learn how to get an API key and much more on [getting started](http://ap
         accessType  : 'ACCESS-TYPE' //default 'readOnly', can be 'readOnly' or 'full'
     });
 
- But, please note that if you set a key directly with this method on your site, then your API key may be obtained by your visitors. You dont want some foreigner to get your API key, because your forms, reports, submissions ... are reachable (even editable if it has full access).
+ But, __please note that__ if you set a key directly with this method on your site, then your API key may be obtained by your visitors. You dont want some foreigner to get your API key, because your forms, reports, submissions ... are reachable (even editable if it has full access).
 
  You may ask that if i cannot initialize library because my API key will be public then what is it for? To fill this gap we implemented login method to authorize users and obtain API key for third party applications. 
 
@@ -96,26 +96,26 @@ For every endpoint defined in JotForm API there is a corresponding method in Jot
         ); 
     }
 
-Indeed most probably you will not need to check user status because an authorization window will automatically pop up when you make request without API key. That means method above can be written like:
+Indeed most probably you will not need to check user status because an authorization window will automatically pop up when you make request without API key. That means method above can be written like
 
-   JF.getUser(function(user) {
+    JF.getUser( function(user) {
         console.log("user profile : ");
         console.log(user);
-    });
+    } );
 
 another example to get list of user's forms
 
-    JF.getForms(function(forms) {
+    JF.getForms( function(forms) {
         console.log("user forms array : ");
         console.log(forms)
-    });
+    } );
 
 final example to get submissions according to given query. 
 
-    JF.getSubmissions(function(submissions) {
+    JF.getSubmissions( function(submissions) {
         console.log("user submissions array : ");
         console.log(submissions);
-    }, {limit: 10, offset: 0, orderBy: 'created_at', direction: 'ASC', filter:{'created_at:gte':'2013-07'}});
+    }, { limit: 10, offset: 0, orderBy: 'created_at', direction: 'ASC', filter:{'created_at:gte':'2013-07'} } );
 
 For submission methods JotForm API accepts a query object as parameter. Sample query can be:
     
