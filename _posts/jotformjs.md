@@ -26,9 +26,7 @@ You can learn how to get an API key and much more on [getting started](http://ap
  I want to mention one important aspect of library. All library methods for communication will call success callback function defined as parameter *when you set an authorized API key*. Setting API key can be done with `JF.initialize` method,
 
     JF.initialize ({
-        apiKey      : 'YOUR-API-KEY',
-        appName     : 'YOUR-APP-NAME', //default window.location.host
-        accessType  : 'ACCESS-TYPE' //default 'readOnly', can be 'readOnly' or 'full'
+        apiKey      : 'YOUR-API-KEY'
     });
 
  But, __please note that__ if you set a key directly with this method on your site, then your API key may be obtained by your visitors. You dont want some foreigner to get your API key, because your forms, reports, submissions ... are reachable (even editable if it has full access).
@@ -42,10 +40,10 @@ You can learn how to get an API key and much more on [getting started](http://ap
  -  Or copy and paste <script src="http://js.jotform.com/JotForm.js"></script>
  -  Call `JF.initialize` method
 
-    JF.initialize ({
-        appName     : 'YOUR-APP-NAME', //default window.location.host
-        accessType  : 'ACCESS-TYPE' //default 'readOnly', can be 'readOnly' or 'full'
-    });
+        JF.initialize ({
+            appName     : 'YOUR-APP-NAME', //default window.location.host
+            accessType  : 'ACCESS-TYPE' //default 'readOnly', can be 'readOnly' or 'full'
+        });
 
 -   What does that all mean?
     -   __*appName*__    : This is your desired application name.
@@ -137,6 +135,6 @@ For submission methods JotForm API accepts a query object as parameter. Sample q
 
 Last but not least
 ------------------
-We believe this is a huge improvement for JotForm. With API our users have much more control over their data and this API may inspire developers to implement many interesting, useful applications. For 1 month there have been plenty of blowing ideas from team like a blog engine, comment plugin like Disqus, data backup, submission analysis .... and i am sure there will be lots. 
+We believe this is a huge improvement for JotForm. With API our users have much more control over their data and this API may inspire developers to implement many interesting, useful applications. For 1 month there have been plenty of blowing ideas from team like a blog engine, comment plugin, data backup, submission analysis .... and i am sure there will be lots. 
 
 We are motivated to help anyone working with JotForm API, seriously do not hesitate to ask questions. We created a public repository for [api use cases](https://github.com/jotform/api-use-cases) which includes projects, code snippets, samples. In adddition we are planning to release a bulletin board for latest API news and discussions next week, see you there!
